@@ -32,7 +32,7 @@ class EcoGuardianTheme {
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: const Color(0xEE080D12),
         indicatorColor: neon.withOpacity(.16),
-        labelTextStyle: MaterialStateProperty.all(
+        labelTextStyle: WidgetStateProperty.all(
           const TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
         ),
       ),

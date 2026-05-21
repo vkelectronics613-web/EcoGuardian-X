@@ -63,7 +63,7 @@ class _ConnectRobotScreenState extends ConsumerState<ConnectRobotScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Icon(Icons.memory_rounded, size: 72, color: EcoGuardianTheme.neon),
+                    const Icon(Icons.memory_rounded, size: 72, color: EcoGuardianTheme.neon),
                     const SizedBox(height: 18),
                     FilledButton.icon(
                       onPressed: () => setState(() => scanning = true),
