@@ -24,6 +24,12 @@ flutter pub get
 flutter run
 ```
 
+## Build APK in GitHub Actions
+
+Open the repository's **Actions** tab, choose **Build Android APK**, then run the workflow manually. The generated APK is uploaded as the `EcoGuardian-X-debug-apk` artifact.
+
+The workflow builds a debug APK so it works without Android signing keys. For Play Store or release distribution, add signing secrets and a release build step.
+
 Android permissions are declared in `mobile/android/app/src/main/AndroidManifest.xml` for Bluetooth, WiFi/network state, camera, notifications, and location required by BLE scanning.
 
 ## Backend setup
